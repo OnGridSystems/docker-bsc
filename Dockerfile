@@ -16,6 +16,9 @@ FROM alpine:latest
 
 RUN apk add --no-cache ca-certificates curl jq tini
 COPY --from=builder /go-ethereum/build/bin/geth /usr/local/bin/
+COPY bsc_mainnet bsc_mainnet
+COPY bsc_testnet bsc_testnet
+RUN geth --datadir node init bsc_testnet/genesis.json
 
-EXPOSE 8545 8546 8547 30303 30303/udp
-ENTRYPOINT ["geth"]
+EXPOSE 8545 8575 8576 8546 8547 30303 30303/udp
+ENTRYPOINT geth --config ./bsc_testnet/config.toml --datadir ./node --ws
