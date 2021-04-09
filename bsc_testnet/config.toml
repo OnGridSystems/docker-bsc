@@ -55,14 +55,12 @@ InsecureUnlockAllowed = false
 NoUSB = true
 IPCPath = "geth.ipc"
 HTTPHost = "0.0.0.0"
-HTTPPort = 8575
+HTTPPort = 8545
 HTTPVirtualHosts = ["*"]
 HTTPModules = ["debug","eth", "net", "web3", "txpool", "parlia"]
 WSHost = "0.0.0.0"
-WSPort = 8576
+WSPort = 8546
 WSModules = ["net", "web3", "eth"]
-GraphQLPort = 8577
-GraphQLVirtualHosts = ["*"]
 
 [Node.P2P]
 MaxPeers = 50
