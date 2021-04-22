@@ -22,5 +22,5 @@ RUN geth --datadir /initialized_node_bsc_testnet init /bsc_testnet/genesis.json
 RUN geth --datadir /initialized_node_bsc_mainnet init /bsc_mainnet/genesis.json
 COPY entrypoint.sh /entrypoint.sh
 
-EXPOSE 8545 8546 30303 30303/udp
+EXPOSE 8545 30303 30303/udp
 ENTRYPOINT ["/entrypoint.sh"]

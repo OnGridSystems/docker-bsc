@@ -59,7 +59,7 @@ HTTPPort = 8545
 HTTPVirtualHosts = ["*"]
 HTTPModules = ["debug","eth", "net", "web3", "txpool", "parlia"]
 WSHost = "0.0.0.0"
-WSPort = 8546
+WSPort = 8545
 WSModules = ["net", "web3", "eth"]
 
 [Node.P2P]
