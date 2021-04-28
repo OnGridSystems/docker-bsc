@@ -1,5 +1,6 @@
 [Eth]
 NetworkId = 97
+SyncMode = "full"
 DiscoveryURLs = []
 NoPruning = false
 NoPrefetch = false
