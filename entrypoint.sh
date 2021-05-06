@@ -20,4 +20,4 @@ if [ ! -d "/node/geth" ]; then
   cp -r /initialized_node_bsc_$NET_NAME/* /node/
 fi
 
-/usr/local/bin/geth --config /bsc_$NET_NAME/config.toml --datadir /node --networkid $NET_ID --rpcvhosts=* --rpccorsdomain=* --wsorigins=* "$@"
+/usr/local/bin/geth --config /bsc_$NET_NAME/config.toml --datadir /node --networkid $NET_ID "$@"
