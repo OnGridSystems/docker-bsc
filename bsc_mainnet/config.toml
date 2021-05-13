@@ -1,14 +1,14 @@
 [Eth]
 NetworkId = 56
-SyncMode = "full"
+SyncMode = "fast"
 NoPruning = false
 NoPrefetch = false
 LightPeers = 100
 UltraLightFraction = 75
-DatabaseCache = 512
+DatabaseCache = 4096
 DatabaseFreezer = ""
-TrieCleanCache = 256
-TrieDirtyCache = 256
+TrieCleanCache = 1024
+TrieDirtyCache = 1024
 TrieTimeout = 100000000000
 EnablePreimageRecording = false
 EWASMInterpreter = ""
